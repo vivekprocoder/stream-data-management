@@ -1,0 +1,65 @@
+<%-- 
+    Document   : addstream
+    Created on : 21 Mar, 2013, 9:28:33 AM
+    Author     : _
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<script src="js/schemaTable.js"></script><!DOCTYPE html>
+<html><%@ include file="masterpage.html" %>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <section id="main" class="column"> 
+	<article class="module width_full">
+			<header><h3>Add New Query</h3></header>
+				<div class="module_content">
+<form action="RegisterStream" method="post" >
+            <table id="metadata" border="0">
+                <tr>
+                    <td><h3>Stream Name</h3></td> <td colspan="2"><input name="StreamName" type="text" value="" placeholder="Enter Name of Stream"></td>
+                </tr>
+                <tr>
+                    <td><h3>Socket Address</h3></td> <td><input type="text" name="SocketAddress" value="" placeholder="IPaddress"></td> <td><input type="text" value="" placeholder="Port"></td>
+                </tr>
+                <tr>
+                    <td><h3>Stream Type</h3></td>
+                    <td colspan="2"><select name="StreamType" >
+                            <option value="string">String</option>
+                            <option value="bitstream">Bitstream</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Schema</h3>
+                    </td>
+
+                    <td>
+                        
+                        <input type="button" value="-"  title="Delete Column" onclick="deleteRow('columns');"/>
+                        <input type="button" value="+"  title="Add Column" onclick="addRow('columns');"/>
+                    </td>
+                </tr>     
+            
+            </table>
+            
+            <table id="columns" border="0"  class="mytable" >
+                <TR><TD>
+                     <input type="checkbox" name="chk" title="Select to delete this column"/>
+                    </TD>
+                    <TD> <input name="txt" type="text" placeholder="Column Name" title="Column Name"/></td> 
+                    <TD>
+                        <select title="Data Type">
+                            <option value="String">String</option>
+                            <option value="Date">Date</option>
+                            <option value="Number">Number</option>
+                        </select>
+                    </td>
+                </TR>
+            </table>
+           <center><input type="submit" value="Save"  title="Save Stream"/></center>
+        </form></section>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+/* 
+    Document   : hideshow
+    Created on : 19 Apr, 2013, 11:06:31 PM
+    Author     : _
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+.slidingDiv1 {
+    height:170px;
+    background-color: #e8f8f8;
+    padding:20px;
+    margin-top:10px;
+    border-bottom:5px solid #3399FF;
+}
+
+.slidingDiv2 {
+    height:170px;
+    background-color: #e8f8f8;
+    padding:20px;
+    margin-top:10px;
+    border-bottom:5px solid #3399FF;
+}
+ 
+.show_hide {
+    display:none;
+}

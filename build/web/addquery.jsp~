@@ -1,0 +1,69 @@
+<%-- 
+    Document   : addquery
+    Created on : 21 Mar, 2013, 9:20:14 AM
+    Author     : _
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html><%@ include file="masterpage.html" %>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+	<section id="main" class="column">
+	<article class="module width_full">
+			<header><h3>Add New Query</h3></header>
+				<div class="module_content">
+					<form id="form1" name="form1" method="get" action="display.jsp">
+					  <table border="0" cellpadding="10" cellspacing="10">
+						<tr><td>Choose Streams</td>
+						<td>
+						<select name="select2" style="width: 200px" size="3" multiple="multiple" tabindex="5">
+						<option value="11">Stream1</option>
+						<option value="12">twelve</option>
+						<option value="13">thirette</option>
+						<option value="14">fourteen</option>
+						<option value="15">fifteen</option>
+						<option value="16">sixteen</option>
+						<option value="17">seventeen</option>
+						<option value="18">eighteen</option>
+						<option value="19">nineteen</option>
+						<option value="20">twenty</option>
+					        </select>
+						</td>
+						</tr>
+						<tr><td>
+						Select Stream Data</td><td>
+						<select name="select2" style="width: 200px" size="3" multiple="multiple" tabindex="5">
+						<option value="11">Stream1</option>
+						<option value="12">twelve</option>
+						<option value="13">thirette</option>
+						<option value="14">fourteen</option>
+						<option value="15">fifteen</option>
+						<option value="16">sixteen</option>
+						<option value="17">seventeen</option>
+						<option value="18">eighteen</option>
+						<option value="19">nineteen</option>
+						<option value="20">twenty</option>
+					        </select>
+						</td>
+						</tr>
+						<tr><td>
+						Window Ranage</td><td>
+						<input id="Text1" type="text" />
+						</td>
+						</tr>
+						<tr><td>
+						Where </td>
+						</tr>
+						<tr><td></td><td>
+						<input type="submit" name="Submit" value="Submit" tabindex="2" /></td></tr> 			</table>
+					</form>         				
+				</div>
+		</article><!-- end of styles article -->
+
+	</section>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>ServletRegisterStream</servlet-name>
+        <servlet-class>com.datastreammanager.controller.ServletRegisterStream</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRegisterStream</servlet-name>
+        <url-pattern>/ServletRegisterStream</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Servletaddquery</servlet-name>
+        <servlet-class>com.datastreammanager.controller.Servletaddquery</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servletaddquery</servlet-name>
+        <url-pattern>/Servletaddquery</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletStreamMonitor</servlet-name>
+        <servlet-class>com.datastreammanager.controller.ServletStreamMonitor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletQueryMonitor</servlet-name>
+        <servlet-class>com.datastreammanager.controller.ServletQueryMonitor</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>ServletStreamMonitor</servlet-name>
+        <url-pattern>/ServletStreamMonitor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletQueryMonitor</servlet-name>
+        <url-pattern>/ServletQueryMonitor</url-pattern>
+    </servlet-mapping>
+
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
